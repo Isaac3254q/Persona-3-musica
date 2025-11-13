@@ -1,0 +1,176 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Música de la saga Persona 3 — Proyecto</title>
+  <style>
+    :root{
+      --azul-oscuro: #0f2b55;
+      --azul-claro: #2f6fd1;
+      --azul-cielo: #6fa8ff;
+      --negro: #0b0b0b;
+      --blanco: #ffffff;
+      --accent: #ffb86b;
+    }
+    body{
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, var(--azul-oscuro) 0%, #071730 100%);
+      color: var(--blanco);
+      line-height: 1.5;
+    }
+    .container{
+      max-width: 900px;
+      margin: 30px auto;
+      background: rgba(255,255,255,0.03);
+      border-radius: 12px;
+      padding: 20px 28px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+    }
+    header{
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+    .logo{
+      width: 72px;
+      height: 72px;
+      background: linear-gradient(135deg, var(--azul-claro), var(--azul-cielo));
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: var(--negro);
+      font-size: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+    h1{ margin: 0; font-size: 26px; }
+    p.lead{ margin-top: 8px; color: #dfefff; }
+
+    section{ margin-top: 18px; }
+    h2{ color: var(--azul-claro); font-size: 20px; margin-bottom: 8px; }
+    ul{ padding-left: 18px; }
+
+    .track{
+      background: rgba(255,255,255,0.02);
+      padding: 8px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .track button {
+      background-color: var(--azul-claro);
+      color: var(--blanco);
+      border: none;
+      padding: 6px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .track button:hover {
+      background-color: var(--azul-cielo);
+    }
+
+    @media (max-width:600px){
+      .container{ margin: 12px; padding: 16px; }
+      header{ gap: 12px; }
+      .track{ flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">P3</div>
+      <div>
+        <h1>Música de la saga <em>Persona</em> (enfocado en Persona 3)</h1>
+      </div>
+    </header>
+
+    <section id="intro">
+      <h2>Introducción</h2>
+      <p>La música de <strong>Persona 3</strong> ayuda mucho a crear la atmósfera del juego. Muchas partes son melancólicas y otras son enérgicas para las batallas. En el juego la música acompaña emociones como la soledad, la amistad y la lucha contra sombras.</p>
+    </section>
+
+    <section id="compositor">
+      <h2>Compositor principal</h2>
+      <p>El compositor más conocido de la saga es <strong>Shoji Meguro</strong>. Él mezcla rock, pop, jazz y electrónica para crear sonidos únicos que se quedan en la cabeza.</p>
+    </section>
+
+    <section id="temas">
+      <h2>Temas destacados</h2>
+      <p>Aquí dejo algunas canciones que son fáciles de reconocer y que a muchos fans les gustan:</p>
+
+      <section id="temas">
+  <h2>Temas destacados</h2>
+  <p>Aquí dejo algunas canciones que son fáciles de reconocer y que a muchos fans les gustan:</p>
+
+  <div class="track">
+    <span>• <strong>Mass Destruction</strong> — tema de batalla muy energético.</span>
+    <audio id="song1" src="file:///home/isaac/Música/Musica/Borralaplaylist/mass-destruction-reload_audio_best_english.mp3"></audio>
+    <button onclick="togglePlay('song1')">▶</button>
+  </div>
+
+  <div class="track">
+    <span>• <strong>When The Moon’s Reaching Out Stars</strong> — una pieza suave y emocional.</span>
+    <audio id="song2" src="file:///home/isaac/Música/Musica/Borralaplaylist/when-the-moon-s-reaching-out-stars-reload_audio_best_english.mp3"></audio>
+    <button onclick="togglePlay('song2')">▶</button>
+  </div>
+
+  <div class="track">
+    <span>• <strong>Memories of You (キミの記憶 -Reload-)</strong> — melancólica y bonita, suena en momentos importantes.</span>
+    <audio id="song3" src="file:///home/isaac/Música/Musica/Borralaplaylist/キミの記憶%20-Reload-%20-%20Azumi%20Takahashi.mp3"></audio>
+    <button onclick="togglePlay('song3')">▶</button>
+  </div>
+
+  <div class="track">
+    <span>• <strong>Burn My Dread</strong> — apertura del juego en algunas versiones, tiene fuerza y misterio.</span>
+    <audio id="song4" src="file:///home/isaac/Música/Musica/Borralaplaylist/burn-my-dread_audio_best_english.mp3"></audio>
+    <button onclick="togglePlay('song4')">▶</button>
+  </div>
+</section>
+
+
+    <section id="por-que-importa">
+      <h2>¿Por qué importa la música?</h2>
+      <p>La música ayuda a entender la historia sin palabras: cuando suena una canción triste, el jugador sabe que el momento es serio; cuando suena música rápida, se prepara para pelear. Además muchos jugadores recuerdan el juego por sus canciones.</p>
+    </section>
+
+    <section id="conclusion">
+      <h2>Conclusión</h2>
+      <p>Persona 3 tiene una banda sonora muy cuidada que mezcla distintos estilos para transmitir emociones. Aunque este es un trabajo corto, recomiendo escuchar las canciones que puse y buscar más si te gustó alguna.</p>
+    </section>
+  </div>
+
+  <script>
+    function togglePlay(id) {
+      const song = document.getElementById(id);
+      if (song.paused) {
+        song.play();
+      } else {
+        song.pause();
+      }
+    }
+  </script>
+  <script>
+  function togglePlay(id) {
+    const audio = document.getElementById(id);
+    if (audio.paused) {
+      // Pausa cualquier otra canción que esté sonando
+      document.querySelectorAll('audio').forEach(a => { if (a !== audio) a.pause(); });
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+</script>
+
+
+</body>
+</html>
+
